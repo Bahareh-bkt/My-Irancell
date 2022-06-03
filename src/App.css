@@ -1,0 +1,60 @@
+.container{
+    background-color: #E5E5E5;
+    display: grid;
+    grid-gap: 10rem;
+    grid-template-columns: (auto-fit, 300px );
+    border-radius: 10rem;
+}
+.menu{
+    position: absolute;
+    width: 279px;
+    height: 967px;
+    left: 1150px;
+    top: 0px;
+    background: #FFFFFF;
+}
+.menu-items{
+    font-family: 'Vazir';
+font-style: normal;
+font-weight: 300;
+font-size: 15px;
+line-height: 23px;
+display: flex;
+align-items: center;
+color: #818181;
+
+}
+.middlebar{
+    background-color: white;
+    border-radius: 10rem;
+    padding: 20rem;
+    margin-left: 5px;
+    display: flex;
+    flex-direction: row;
+}
+.chart{
+    position: absolute;
+    width: 781px;
+    height: 337px;
+    left: 352px;
+    top: 245px;
+    background: #FFFFFF;
+    border-radius: 14px;
+
+}
+.profile{
+    background-color: white;
+    border-radius: 10rem;
+    padding: 20rem;
+    margin-left: 5px;
+    display: flex;
+    flex-direction: row;
+}
+.banner{
+    position: absolute;
+    width: 781px;
+    height: 131px;
+    left: 352px;
+    top: 84px;
+    background: linear-gradient(270deg, rgba(253, 200, 22, 0.3) 0.38%, rgba(255, 223, 114, 0.3) 99.1%);
+}
