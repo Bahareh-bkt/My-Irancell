@@ -2,7 +2,9 @@ import React from 'react'
 
 function ConsumChart() {
   return (
-    <div>ConsumChart</div>
+    <div className='chart'>
+      ConsumChart
+      </div>
   )
 }
 
