@@ -1,9 +1,11 @@
 import React from 'react'
+import bannerImg from '../assets/images/banner-img.png'
+
 
 function Banner() {
   return (
     <div className='banner'>
-      Banner
+      <img src={bannerImg} />
     </div>
   )
 }
