@@ -16,7 +16,7 @@ import menuImage from '../assets/images/my-irancell-img.png'
 const Menu = () => {
   return (
     <div className='menu'>
-      <img src={menuImage} alt="side-header" width={152} height={37} style={{margin:"24px 0 60px 0"}}/>
+      <img src={menuImage} alt="menuImage" width={150} height={35} style={{margin:"20px 5 50px 5"}}/>
 
       <div className="search-box">
         <input type="text" placeholder="جستجو" dir="rtl" />
@@ -24,7 +24,7 @@ const Menu = () => {
 
       <div className=""  >
           <p className="">صفحه اصلی</p>
-          <MdOutlineHome color="#FDC816" size={20} />
+          <MdOutlineHome color="#f4dc50" size='1.5em' />
       </div>
 
       <p className=''>سرویس ها</p>
