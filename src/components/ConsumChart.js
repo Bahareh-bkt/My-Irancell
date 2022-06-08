@@ -1,13 +1,13 @@
-import React from 'react';
-
+import React, { PureComponent } from 'react';
 import {
   AreaChart,
   Area,
   XAxis,
   YAxis,
   CartesianGrid,
-  Tooltip
-} from "recharts";
+  Tooltip,
+  ResponsiveContainer
+} from "recharts"
 
 const data = [
   {
@@ -43,25 +43,31 @@ const data = [
     uv: 1400,
   }
 ];
-
-export default function ConsumChart() {
+export default class MyAreaChart extends PureComponent {
+render() {
   return (
-    <AreaChart
-      width={500}
-      height={400}
-      data={data}
-      margin={{
-        top: 10,
-        right: 30,
-        left: 0,
-        bottom: 0
-      }}
-    >
-      <CartesianGrid strokeDasharray="3 3" />
-      <XAxis dataKey="name" />
-      <YAxis dataKey="uv/>
-      <Tooltip />
-      <Area type="monotone" dataKey="uv" stroke="##FDC816" fill="#FDC816"/>
-    </AreaChart>
-  );
+      <ResponsiveContainer width="100%" height={400}>
+          <AreaChart data={data}
+              width={500}
+              height={400}
+              margin={{
+                 top: 10,
+                 right: 30,
+                 left: 0,
+                 bottom: 0}}>
+                 {/* <defs>
+                     <linearGradient id="color" x1="0" y1="0 x2="0" y2="1">
+                       <stop offset="0%" stopColor="#2451B7" stopOpacity={0.4} />
+                      <stop offset="75%" stopColor="#2451B7" stopOpacity={0.05} />                  
+                    </linearGradient>
+                 </defs>    */}
+                 <CartesianGrid strokeDasharray="3 3" />
+                 <XAxis dataKey="name" axisLine={false} tickLine={false} />
+                 <YAxis dataKey="uv" axisLine={false} tickLine={false} />
+                 <Tooltip />
+               <Area type="monotone" dataKey="uv" stroke="##FDC816" strokeWidth={5} fill="#FDC816"/>
+          </AreaChart>
+     </ResponsiveContainer>
+  )
+}
 }
