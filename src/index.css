@@ -58,9 +58,7 @@
   font-weight: 300;
   font-size: 15px;
   line-height: 23px;
-  display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
   align-items: center;
   color: #818181;
 }
