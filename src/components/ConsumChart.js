@@ -1,34 +1,38 @@
-import React, { PureComponent } from 'react';
+import React, { PureComponent } from 'react'
 import {
+  LineChart,
+  Line,
   AreaChart,
   Area,
   XAxis,
   YAxis,
   CartesianGrid,
   Tooltip,
+  Legend,
+  Brush,
   ResponsiveContainer
 } from "recharts"
 
 const data = [
   {
     name: "7.1",
-    uv: 400,
+    value: 400,
   },
   {
     name: "7.5",
-    uv: 1000,
+    value: 1000,
   },
   {
     name: "7.10",
-    uv: 500,
+    value: 500,
   },
   {
     name: "7.15",
-    uv: 1500,
+    value: 1500,
   },
   {
     name: "7.18",
-    uv: 2000,
+    value: 2000,
   },
   {
     name: "7.25",
@@ -42,11 +46,12 @@ const data = [
     name: "7.28",
     uv: 1400,
   }
-];
-export default class MyAreaChart extends PureComponent {
+]
+export default class ConsumChart extends PureComponent {
 render() {
   return (
-      <ResponsiveContainer width="100%" height={400}>
+    <div style={{height: '250px', width:'100%', textAlign:'left'}}>
+      <ResponsiveContainer >
           <AreaChart data={data}
               width={500}
               height={400}
@@ -63,11 +68,12 @@ render() {
                  </defs>    */}
                  <CartesianGrid strokeDasharray="3 3" />
                  <XAxis dataKey="name" axisLine={false} tickLine={false} />
-                 <YAxis dataKey="uv" axisLine={false} tickLine={false} />
+                 <YAxis dataKey="value" axisLine={false} tickLine={false} type="category" domain={[0,1000]} width={100}/>
                  <Tooltip />
-               <Area type="monotone" dataKey="uv" stroke="##FDC816" strokeWidth={5} fill="#FDC816"/>
+               <Area type="monotone" dataKey="value" stroke="#FDC816" strokeWidth={5} fill="#FDC816" />
           </AreaChart>
      </ResponsiveContainer>
+    </div>
   )
 }
 }
