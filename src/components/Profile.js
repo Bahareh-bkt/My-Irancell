@@ -1,9 +1,14 @@
 import React from 'react'
+import CustomerImg from '../assets/images/customer.png'
 
-const Profile = () => {
+function Profile() {
   return (
     <div className='profile'>
-      Profile
+      <section>
+        <h1>سلام، بهاره بختیاری </h1>
+        <p>+98 9360011223</p>
+      </section>
+      <img src={CustomerImg} alt="CustomerImage" width={62} height={62} />
     </div>
   )
 }
