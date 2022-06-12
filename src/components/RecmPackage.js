@@ -34,7 +34,7 @@ function RecmPackage() {
           <th></th>
         </tr> 
         <tbody>
-          {mockRowData.map((item) => (
+          {Packages.map((item) => (
             <tr>
               <td style={{ paddingRight: 33 }}>{item.date}</td>
               <td>{item.PackageName}</td>
@@ -47,7 +47,6 @@ function RecmPackage() {
           ))}
         </tbody>       
       </table>
-      {/* <RecmPackage Packages={Packages} /> */}
     </div>
   )
 }

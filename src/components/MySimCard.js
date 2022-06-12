@@ -6,21 +6,20 @@ import ConsumChart from './ConsumChart'
 function MySimCard () {
   return (
     <div className='my-simcard'>
-      MySimCard
       <div style={{display: 'flex', alignments:'center', justifyContent:'center', flexDirection:'column'}}>
-      <h1>شارژ باقی مانده سیمکارت</h1>
-      <div style={{position: 'relative', width:200, height:200}}>
-        <ConsumChart/>
+      <h3>شارژ باقی مانده سیمکارت</h3>
+      <div style={{position: 'relative', width:100, height:60}}>
+        
         <p
             style={{
                 position: 'absolute',
-                bottom: 70,
-                left: 58,
+                bottom: 10,
+                left: 75,
                 direction: 'rtl',
                 color: '#00A3FF',
             }}
             >
-              6000تومان
+              43,000تومان
             </p>
       </div>
       <span
@@ -56,7 +55,7 @@ function MySimCard () {
             </div>
             <div>
               <p className='sub-text'>بسته پیامک هفتگی</p>
-              <p className='sub-text'>تا تاریخ31 خرداد1400</p>
+              <p className='sub-text'>تا تاریخ 25 تیر 1401</p>
             </div>
           </section>
           <section>
@@ -65,12 +64,12 @@ function MySimCard () {
             </div>
             <div>
               <p className='sub-text'>بسته اینترنت ماهانه</p>
-              <p className='sub-text'>تا تاریخ 12خرداد 1400</p>
+              <p className='sub-text'>تا تاریخ 17 مرداد 1401</p>
             </div>
           </section>
         </div>
   
-      <img src={dnldImg} alt="downloadImg" width={250} height={100} style={{margin:"20px 5 50px 5"}}/>
+      <img src={dnldImg} alt="downloadImg" width={150} height={70} style={{margin:"05"}}/>
     </div>
   )
 }

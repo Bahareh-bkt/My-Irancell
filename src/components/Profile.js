@@ -5,10 +5,10 @@ function Profile() {
   return (
     <div className='profile'>
       <section>
-        <h1>سلام، بهاره بختیاری </h1>
+        <h3>سلام، بهاره بختیاری </h3>
         <p>+98 9360011223</p>
       </section>
-      <img src={CustomerImg} alt="CustomerImage" width={62} height={62} />
+      <img src={CustomerImg} alt="CustomerImage" width={60} height={60} />
     </div>
   )
 }

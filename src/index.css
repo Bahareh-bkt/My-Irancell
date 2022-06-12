@@ -1,6 +1,6 @@
 .container{
   max-width: 2000px;
-  max-height: 700px;
+  max-height: 967px;
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
@@ -11,7 +11,7 @@
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: (auto-fit, 300px );
-  height: 625px;
+  height: 967px;
   width: 1200px;
 }
 .menu{
@@ -23,8 +23,8 @@
   /* justify-content:space-between; */
   /* white-space: pre-wrap; */
   position: absolute;
-  width: 200px;
-  height: 600px;
+  width: 279px;
+  height: 967px;
   left: 1150px;
   top: 0px;
 }
@@ -72,8 +72,8 @@
   margin-top: 60px;
   flex-direction: column;
   justify-content: center;
-  width: 830px;
-  height: 555px;
+  width: 781px;
+  height: 764px;
   position: absolute;
   left: 300px;
   right: 200px;
@@ -93,10 +93,10 @@
 }
 .chart{
   position: absolute;
-  width: 830px;
-  height: 200px;
-  left: 0px;
-  top: 145px;
+  width: 781px;
+  height: 537px;
+  left: 25px;
+  top: 245px;
   background: #fcfcfc;
   border-radius: 14px;
   margin-bottom: 2px;
@@ -104,12 +104,13 @@
 }
 .rcmpackage{
   position: absolute;
-  width: 830px;
-  height: 205px;
-  left: 0px;
-  top: 350px;
+  width: 781px;
+  height: 256px;
+  left: 25px;
+  top: 611px;
+  margin-bottom: 25px;
   background: #FFFFFF;
-  border-radius: 14px;
+  border-radius: 16px;
 }
 
 .title{
@@ -139,6 +140,8 @@
   height: 93px;
   left: 0px;
   top: 19px;
+  display:flex;
+  flex-direction: row;
 }
 .my-simcard{
   background-color: #FFFCEF;
@@ -146,7 +149,7 @@
   margin-left: 35px;
   position: absolute;
   width: 250px;
-  height: 490px;
+  height: 802px;
   left: 0px;
   top: 135px;
 }
