@@ -52,23 +52,16 @@ render() {
   return (
     <div style={{height: '250px', width:'100%', textAlign:'left'}}>
       <ResponsiveContainer >
-          <AreaChart data={data}
-              width={500}
-              height={400}
-              margin={{
-                 top: 10,
-                 right: 30,
-                 left: 0,
-                 bottom: 0}}>
+          <AreaChart data={data}>
                  {/* <defs>
                      <linearGradient id="color" x1="0" y1="0 x2="0" y2="1">
                        <stop offset="0%" stopColor="#2451B7" stopOpacity={0.4} />
                       <stop offset="75%" stopColor="#2451B7" stopOpacity={0.05} />                  
                     </linearGradient>
                  </defs>    */}
-                 <CartesianGrid strokeDasharray="3 3" />
-                 <XAxis dataKey="name" axisLine={false} tickLine={false} />
-                 <YAxis dataKey="value" axisLine={false} tickLine={false} type="category" domain={[0,1000]} width={100}/>
+                 <CartesianGrid strokeDasharray="0" />
+                 <XAxis dataKey="name"/>
+                 <YAxis dataKey="value" type="category" domain={[0,2000]} width={100}/>
                  <Tooltip />
                <Area type="monotone" dataKey="value" stroke="#FDC816" strokeWidth={5} fill="#FDC816" />
           </AreaChart>

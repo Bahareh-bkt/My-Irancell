@@ -21,11 +21,11 @@ function Banner() {
               direction: 'rtl',
               background: '#FDC816',
               color: 'white',
-              width: 100,
+              width: 10,
               height: 60,
               textAlign: 'center',
               borderRadius: 5,
-              marginLeft:'60px',
+              marginLeft:'20px',
             }}>اینجا چه خبره !</span>
     </div>
   )
