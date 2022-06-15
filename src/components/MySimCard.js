@@ -8,7 +8,13 @@ function MySimCard () {
     <div className='my-simcard'>
       <div>
         <div style={{display: 'flex', alignments:'center', justifyContent:'center', flexDirection:'column'}}>
-          <h3>شارژ باقی مانده سیمکارت</h3>
+          <h3 style={{
+              fontSize: '20px',
+              fontWeight: '400',
+              color: 'black',
+              textAlign: 'center',
+              
+            }}>شارژ باقی مانده سیمکارت</h3>
           <div style={{position: 'relative', width:200, height:200}}>
             <PieChart/>
             <p
@@ -20,13 +26,13 @@ function MySimCard () {
                     color: '#00A3FF',
                 }}
                 >
-                  43,000تومان
+                   43,000 تومان 
                 </p>
           </div>
           <span
             style={{
-              fontWeight: 400,
-              fontSize: 15,
+              fontWeight: 600,
+              fontSize: 18,
               direction: 'rtl',
               background: '#FDC816',
               color: 'white',
@@ -34,44 +40,54 @@ function MySimCard () {
               height: 30,
               textAlign: 'center',
               borderRadius: 5,
+              marginLeft:'20px',
             }}
           >
             سیمکارتت رو شارژ کن!
           </span>
         </div>
+        <br/>
         <div style={{ margin: '35px' }}>
           <p
             style={{
-              fontSize: '15px',
+              fontSize: '20px',
               fontWeight: '400',
               color: 'black',
               textAlign: 'right',
             }}
           >
             خدمات فعال
-          </p>
+          </p>       <br/>
           <section>
-            <div className="icon-box">
-              <MdOutlineMailOutline color="rgba(253, 200, 22, 1)" size={20} />
-            </div>
+            
             <div>
-              <p className='sub-text'>بسته پیامک هفتگی</p>
-              <p className='sub-text'>تا تاریخ 25 تیر 1401</p>
+            <div dir='rtl'>
+              <span className='sub-text'>بسته پیامک هفتگی</span></div>
+              <div className="icon-box" >
+              <MdOutlineMailOutline color="rgba(253, 200, 22, 1)" size={20}  />
             </div>
+            <div dir='rtl'>
+              <span className='sub-text'>تا تاریخ 25 تیر 1401    </span>
+            </div></div>
           </section>
+          <br/>
+          <br/>
           <section>
-            <div className="icon-box">
+           <div> 
+            <div dir='rtl'>
+              <span className='sub-text'>بسته اینترنت ماهانه</span>
+              </div>
+              <div className="icon-box">
               <MdOutlineWifi color="rgba(253, 200, 22, 1)" size={20} />
             </div>
-            <div>
-              <p className='sub-text'>بسته اینترنت ماهانه</p>
-              <p className='sub-text'>تا تاریخ 17 مرداد 1401</p>
-            </div>
+            <div dir='rtl'>
+              <span className='sub-text'>تا تاریخ17مرداد1401</span>
+            </div></div>
           </section>
         </div>
         </div>
   
-      <img src={dnldImg} alt="downloadImg" width={150} height={70} style={{margin:"05"}}/>
+      <img className='img-a' src={dnldImg} alt="downloadImg" width={150} height={70}/>
     </div>
   )
 }

@@ -8,6 +8,7 @@ const MiddleBar = () => {
   return (
     <div className='middlebar'>
       <Banner/>
+      <p className='text-nemodar'> نمودار میزان مصرف کل</p>
       <ConsumChart/>
       <RecmPackage/>
     </div>

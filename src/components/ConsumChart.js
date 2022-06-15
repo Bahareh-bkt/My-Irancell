@@ -16,35 +16,35 @@ import {
 const data = [
   {
     name: "7.1",
-    value: 400,
+    value: '400',
   },
   {
     name: "7.5",
-    value: 1000,
+    value: '2000',
   },
   {
     name: "7.10",
-    value: 500,
+    value: '1400',
   },
   {
     name: "7.15",
-    value: 1500,
+    value: '700',
   },
   {
     name: "7.18",
-    value: 2000,
+    value: '2000',
   },
   {
     name: "7.25",
-    uv: 2300,
+    value: '800',
   },
   {
     name: "7.20",
-    uv: 1800,
+    value: '1400',
   },
   {
     name: "7.28",
-    uv: 1400,
+    value: '1000',
   }
 ]
 export default class ConsumChart extends PureComponent {
