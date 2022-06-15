@@ -6,6 +6,7 @@
   padding-left: 15px;
   padding-right: 15px;
 }
+
 .main-page{
   background-color: #E5E5E5;
   display: grid;
@@ -35,7 +36,7 @@
   border: 1px solid rgba(231, 231, 231, 1);
   left: 1186px;
   top: 112px;
-margin-top: 10px;
+  margin-top: 10px;
   border-radius: 10px;
   display: flex;
   flex-direction: row-reverse;
@@ -86,18 +87,19 @@ margin-top: 10px;
   margin-top: 0px;
   margin-bottom: 10px;
   flex-direction: column;
-  width: 830px;
+  width: 760px;
   height: 100px;
-  left: 0px;
+  left: 40px;
   top: 0px;
   background-color: white;
 }
 .chart{
   position: absolute;
-  width: 781px;
-  height: 537px;
-  left: 25px;
-  top: 245px;
+  width: 481px;
+  text-align: center;
+  height: 37px;
+  margin-left: 35px;
+  top: 210px;
   background: #fcfcfc;
   border-radius: 14px;
   margin-bottom: 2px;
@@ -107,8 +109,8 @@ margin-top: 10px;
   position: absolute;
   width: 781px;
   height: 256px;
-  left: 25px;
-  top: 611px;
+  left: 40px;
+  top: 580px;
   margin-bottom: 25px;
   background: #FFFFFF;
   border-radius: 16px;
@@ -118,12 +120,12 @@ margin-top: 10px;
   position: absolute;
   width: 98px;
   height: 36px;
-  left: 1035px;
+  left: 1001px;
   top: 21px;
   font-family: 'Lalezar';
   font-style: normal;
-  font-weight: 550;
-  font-size: 23px;
+  font-weight: 800;
+  font-size: 20px;
   line-height: 36px;
   /* identical to box height */
 
@@ -142,7 +144,7 @@ margin-top: 10px;
   font-size: 20px;
   text-align: right;
   color: #000000;
-  margin-top: -7rem;
+  margin-top: -25rem;
   margin-left: 50px;
    font-weight: 800;
 }
@@ -184,6 +186,7 @@ margin-top: 10px;
   height: 802px;
   left: 0px;
   top: 135px;
+  font-size: 14;
 }
 
 .icon-box{
@@ -198,7 +201,7 @@ margin-top: 10px;
 .sub-text{ 
   margin: 1rem 2rem 1rem 2rem;
   font-size: '9px';
-  font-weight: '400';
+  font-weight: '100';
   text-align: 'center';
   color: #818181;
 }
