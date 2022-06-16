@@ -1,4 +1,5 @@
 import React from 'react'
+
 import {
   MdOutlineHome,
   MdAddBox,
@@ -8,7 +9,8 @@ import {
   MdOutlineCategory,
   MdOutlineDataExploration,
   MdTextSnippet,
-  MdOutlineLocationOn 
+  MdOutlineLocationOn ,
+  MdOutlineSavedSearch
 } from 'react-icons/md'
 
 import menuImage from '../assets/images/my-irancell-img.png'
@@ -21,7 +23,8 @@ function Menu () {
       <img src={menuImage} alt="menuImage" width={150} height={35} style={{margin:"20px 5 50px 5"}}/>
 
       <div className="search-box">
-        <input type="text" placeholder="جستجو" dir="rtl" />
+       <MdOutlineSavedSearch color="#E7E7E7"fontSize={28}/>
+        <input type="text" placeholder="جستجو" dir="rtl"  />
       </div>
       </div>
 
