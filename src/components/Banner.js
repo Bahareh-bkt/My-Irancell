@@ -5,7 +5,7 @@ import bannerImg from "../assets/images/banner-img.png"
 function Banner() {
   return (
     <div className="banner">
-      <img src={bannerImg} alt="BannerImg" style={{width: "100%"}}/>
+      <img src={bannerImg} alt="BannerImg"/>
       <div className='text-b' style={{
               fontSize: '20px',
               fontWeight: '700',
@@ -17,15 +17,15 @@ function Banner() {
       </div>
           <span style={{
               fontWeight: 400,
-              fontSize: 14,
+              fontSize: '14px',
               direction: 'rtl',
               background: '#FDC816',
               color: 'white',
-              width: 10,
+              width: 80,
               height: 60,
               textAlign: 'center',
               borderRadius: 5,
-              marginLeft:'20px',
+              marginLeft:'70px',
             }}>اینجا چه خبره !</span>
     </div>
   )
