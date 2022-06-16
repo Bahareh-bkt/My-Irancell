@@ -10,7 +10,7 @@ function MySimCard () {
         <div style={{display: 'flex', alignments:'center', justifyContent:'center', flexDirection:'column'}}>
           <h3 style={{
               fontSize: '20px',
-              fontWeight: '400',
+              fontWeight: '800',
               color: 'black',
               textAlign: 'center',
               
@@ -31,7 +31,7 @@ function MySimCard () {
           </div>
           <span
             style={{
-              fontWeight: 600,
+              fontWeight: '800',
               fontSize: 18,
               direction: 'rtl',
               background: '#FDC816',
@@ -51,7 +51,7 @@ function MySimCard () {
           <p
             style={{
               fontSize: '20px',
-              fontWeight: '400',
+              fontWeight: '800',
               color: 'black',
               textAlign: 'right',
             }}
@@ -62,12 +62,12 @@ function MySimCard () {
             
             <div>
             <div dir='rtl'>
-              <span className='sub-text'>بسته پیامک هفتگی</span></div>
+              <span className="sub-text">بسته پیامک هفتگی</span></div>
               <div className="icon-box" >
               <MdOutlineMailOutline color="rgba(253, 200, 22, 1)" size={20}  />
             </div>
             <div dir='rtl'>
-              <span className='sub-text'>تا تاریخ 25 تیر 1401    </span>
+              <span className="sub-text">تا تاریخ 25 تیر 1401    </span>
             </div></div>
           </section>
           <br/>
@@ -75,13 +75,13 @@ function MySimCard () {
           <section>
            <div> 
             <div dir='rtl'>
-              <span className='sub-text'>بسته اینترنت ماهانه</span>
+              <span className="sub-text">بسته اینترنت ماهانه</span>
               </div>
               <div className="icon-box">
               <MdOutlineWifi color="rgba(253, 200, 22, 1)" size={20} />
             </div>
             <div dir='rtl'>
-              <span className='sub-text'>تا تاریخ17مرداد1401</span>
+              <span className="sub-text">تا تاریخ17مرداد1401</span>
             </div></div>
           </section>
         </div>
