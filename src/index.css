@@ -68,7 +68,7 @@
 }
 
 .middlebar{
-  background-color: E5E5E5;
+  background-color: #E5E5E5;
   border-radius: 1rem;
   display: flex;
   margin-top: 60px;
@@ -95,12 +95,12 @@
 }
 .chart{
   position: absolute;
-  width: 481px;
+  width: 450px;
   text-align: center;
   height: 37px;
-  margin-left: 35px;
+  margin-left: 0px;
   top: 210px;
-  background: #fcfcfc;
+  background: #E5E5E5;
   border-radius: 14px;
   margin-bottom: 2px;
 

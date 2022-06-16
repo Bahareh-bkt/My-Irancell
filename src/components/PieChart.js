@@ -2,10 +2,8 @@ import React, { PureComponent } from 'react'
 import {
   PieChart,
   Pie,
-  Sector,
   Cell,
   ResponsiveContainer,
-  Label,
 } from 'recharts'
 
 const data = [

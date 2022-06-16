@@ -1,15 +1,11 @@
 import React, { PureComponent } from 'react'
 import {
-  LineChart,
-  Line,
   AreaChart,
   Area,
   XAxis,
   YAxis,
   CartesianGrid,
   Tooltip,
-  Legend,
-  Brush,
   ResponsiveContainer
 } from "recharts"
 
