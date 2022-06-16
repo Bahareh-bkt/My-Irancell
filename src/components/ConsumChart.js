@@ -50,7 +50,7 @@ const data = [
 export default class ConsumChart extends PureComponent {
 render() {
   return (
-    <div style={{height: '250px', width:'100%', textAlign:'left'}}>
+    <div className='chart' style={{height: '250px', width:'99%', textAlign:'center'}}>
       <ResponsiveContainer >
           <AreaChart data={data}>
                  {/* <defs>

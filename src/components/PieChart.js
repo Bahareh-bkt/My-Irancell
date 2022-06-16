@@ -17,12 +17,12 @@ const COLORS = ['#E4EBEC', '#FDC816']
 export default class MyPieChart extends PureComponent {
   render() {
     return (
-      <ResponsiveContainer width="95%" height={200}>
+      <ResponsiveContainer width="100%" height={500}>
         <PieChart onMouseEnter={this.onPieEnter} width={200} height={100}>
             <Pie
                 data={data}
-                cx={120}
-                cy={200}
+                cx={110}
+                cy={100}
                 innerRadius={60}
                 outerRadius={80}
                 fill="#8884d8"

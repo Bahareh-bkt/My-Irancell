@@ -1,4 +1,5 @@
 import React from 'react'
+
 import {
   MdOutlineHome,
   MdAddBox,
@@ -8,7 +9,8 @@ import {
   MdOutlineCategory,
   MdOutlineDataExploration,
   MdTextSnippet,
-  MdOutlineLocationOn 
+  MdOutlineLocationOn ,
+  MdOutlineSavedSearch
 } from 'react-icons/md'
 
 import menuImage from '../assets/images/my-irancell-img.png'
@@ -21,54 +23,57 @@ function Menu () {
       <img src={menuImage} alt="menuImage" width={150} height={35} style={{margin:"20px 5 50px 5"}}/>
 
       <div className="search-box">
-        <input type="text" placeholder="جستجو" dir="rtl" />
+       <MdOutlineSavedSearch color="#E7E7E7"fontSize={28}/>
+        <input type="text" placeholder="جستجو" dir="rtl"  />
       </div>
       </div>
 
-      <div style={{display:"flex",flexDirection:"column",alignItems:"flex-end",marginRight:68}}>
+      <div style={{display:"flex",flexDirection:"column",alignItems:"flex-end",marginRight:80}}>
       <div style={{width:"100%",marginBottom:40}}>
-        <div>  
-          <p className="">صفحه اصلی</p>
+        <div className="">
+           <span> صفحه اصلی </span> 
           <MdOutlineHome color="#f4dc50" size='1.5em' />
         </div> 
-      
 
-      <p className=''>سرویس ها</p>
-      <div>
-        <div className='menu-icons'>
-          <p>شارژ سیمکارت</p>
+      <div className='' style={{display:"flex",color:"#b8b8b8",flexDirection:"column",alignItems:"flex-end"}}><p >سرویس ها</p></div>
+      <div className='menu-icons'>
+        <div >
+          <span> شارژ سیمکارت          </span>
           <MdAddBox  size='1.5em'/>
         <div/>
-        <div className='menu-icons'>
-          <p>اینترنت </p>
+        <div >
+          <span>اینترنت          </span>
           <MdPieChartOutline  size='1.5em'/>
         </div>
-        <div className='menu-icons'>
-          <p>کارکرد و فروش</p>
+        <div>
+          <span>کارکرد و فروش          </span>
           <MdInsertChartOutlined  size='1.5em'/>
         </div>
-        <div className='menu-icons'>
-          <p>خدمات</p>
+        <div>
+          <span>خدمات         </span>
           <MdDocumentScanner size='1.5em'/>
         </div>
       </div>
-      <div>
-        <div className='menu-icons'>
-          <p>مدیریت خدمات</p>
+      
+      <div className='' style={{display:"flex",color:"#b8b8b8",flexDirection:"column",alignItems:"flex-end"}}><p > مدیریت</p></div>
+      <div className='menu-icons'>
+        <div>
+          <span>مدیریت خدمات         </span>
           <MdOutlineCategory  size='1.5em'/>
         </div>
-        <div className='menu-icons'>
-          <p>مدیریت سیمکارت</p>
+        <div>
+          <span>مدیریت سیمکارت         </span>
           <MdOutlineDataExploration  size='1.5em'/>
         </div>
       </div>
+      <div className='' style={{display:"flex"}}><p > </p></div>
       <div>
-        <div className='menu-icons'>
-          <p>سوالات متداول</p>
+        <div>
+          <span>سوالات متداول         </span>
           <MdTextSnippet  size='1.5em'/>
         </div>
-        <div className='menu-icons'>
-          <p>ارتباط با ما</p>
+        <div>
+          <span>ارتباط با ما         </span>
           <MdOutlineLocationOn  size='1.5em'/>
         </div>
       </div>

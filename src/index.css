@@ -6,6 +6,7 @@
   padding-left: 15px;
   padding-right: 15px;
 }
+
 .main-page{
   background-color: #E5E5E5;
   display: grid;
@@ -15,6 +16,7 @@
   width: 1200px;
 }
 .menu{
+  text-align: right;
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
   padding: 1rem;
@@ -34,7 +36,7 @@
   border: 1px solid rgba(231, 231, 231, 1);
   left: 1186px;
   top: 112px;
-
+  margin-top: 10px;
   border-radius: 10px;
   display: flex;
   flex-direction: row-reverse;
@@ -50,6 +52,7 @@
   outline: none;
 }
 .menu-icons{
+  text-align: right;
   font-family: 'Vazir';
   display: flex;
   flex-direction: column;
@@ -57,10 +60,11 @@
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
-  line-height: 23px;
-  flex-wrap: wrap;
-  align-items: center;
+  line-height: 35px;
+  flex-wrap: wrap-reverse;
+  align-items: left;
   color: #818181;
+  
 }
 
 .middlebar{
@@ -83,18 +87,19 @@
   margin-top: 0px;
   margin-bottom: 10px;
   flex-direction: column;
-  width: 830px;
+  width: 760px;
   height: 100px;
-  left: 0px;
+  left: 40px;
   top: 0px;
   background-color: white;
 }
 .chart{
   position: absolute;
-  width: 781px;
-  height: 537px;
-  left: 25px;
-  top: 245px;
+  width: 481px;
+  text-align: center;
+  height: 37px;
+  margin-left: 35px;
+  top: 210px;
   background: #fcfcfc;
   border-radius: 14px;
   margin-bottom: 2px;
@@ -104,8 +109,8 @@
   position: absolute;
   width: 781px;
   height: 256px;
-  left: 25px;
-  top: 611px;
+  left: 40px;
+  top: 580px;
   margin-bottom: 25px;
   background: #FFFFFF;
   border-radius: 16px;
@@ -115,12 +120,12 @@
   position: absolute;
   width: 98px;
   height: 36px;
-  left: 1035px;
+  left: 1001px;
   top: 21px;
   font-family: 'Lalezar';
   font-style: normal;
-  font-weight: 400;
-  font-size: 23px;
+  font-weight: 800;
+  font-size: 20px;
   line-height: 36px;
   /* identical to box height */
 
@@ -129,6 +134,21 @@
 
   color: #000000;
 }
+.text-b{
+  color: #000000;
+  margin-top: -7rem;
+  margin-left: 50px;
+
+}
+.text-nemodar{
+  font-size: 20px;
+  text-align: right;
+  color: #000000;
+  margin-top: -25rem;
+  margin-left: 50px;
+   font-weight: 800;
+}
+
 .profile{
   background-color: rgb(255, 255, 255);
   border-radius: 25px;
@@ -136,10 +156,26 @@
   position: absolute;
   width: 250px;
   height: 93px;
-  left: 0px;
+  left: 02px;
   top: 19px;
   display:flex;
-  flex-direction: row;
+  align-items: center;
+
+}
+.img-p{
+  background-color: #FDC816;
+  border-radius: 50%;
+  width: 62px;
+  padding: 4px;
+  height: 62px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.txt-p{
+  margin: auto;
 }
 .my-simcard{
   background-color: #FFFCEF;
@@ -150,6 +186,31 @@
   height: 802px;
   left: 0px;
   top: 135px;
+  font-size: 14;
+}
+
+.icon-box{
+  text-align: right;
+  font-family: 'Vazir';
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap-reverse;
+  align-items: left;
+  
+}
+.sub-text{ 
+  margin: 1rem 2rem 1rem 2rem;
+  font-size: '9px';
+  font-weight: '100';
+  text-align: 'center';
+  color: #818181;
+}
+
+.img-a{
+  border-radius: 15px;
+  margin-top: 70px;
+  margin-right: auto;
+  margin-left: 50px;
 }
 .pie-chart{
   box-sizing: border-box;
@@ -161,4 +222,35 @@
   border: 20px solid #FDC816;
   border-radius: 20px;
   transform: rotate(-71.78deg);
+}
+.rcmpackage{
+background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  border-radius: 1rem;
+  margin-top: -60px;
+  width: 750px;
+  height: 300px;
+}
+.table{
+  border: 1px solid rgb(204, 204, 204);
+    border-collapse: separate;
+    border-radius: 9px;
+    width: 95%;
+    margin: 16px;
+    font-family: vazir;
+    margin-top: -0px;
+    width: 710px;
+    height: 200px;
+}
+.tr{
+  height: 57px;
+      border-bottom: 1px solid rgb(204, 204, 204);
+}
+.td{
+  border-bottom: 1px solid rgb(204, 204, 204);
+}
+.th{
+  border-bottom: 1px solid rgb(204, 204, 204);
 }
