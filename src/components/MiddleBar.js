@@ -9,7 +9,6 @@ const MiddleBar = () => {
     <div className='middlebar'>
       <Banner/>
       <p className='text-nemodar'> نمودار میزان مصرف کل</p>
-      <h1 نمودار میزان مصرف />
       <ConsumChart/>
       <RecmPackage/>
     </div>
